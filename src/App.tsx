@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Nav, Projects } from './components';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [currentPage, setCurrentPage] = React.useState('About');
+
+    const pages = {};
+
+    return (
+        <div className="App">
+            <header>
+                <h1 className="text-7xl font-extrabold">Justin Le</h1>
+            </header>
+            <Nav currentPage={currentPage} setCurrentPage={setCurrentPage} />
+        </div>
+    );
 }
 
 export default App;
