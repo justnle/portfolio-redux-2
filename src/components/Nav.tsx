@@ -4,8 +4,12 @@ type PageProps = {
 };
 
 const styles = {
-    block: {
-        padding: 10
+    activeBlock: {
+        backgroundColor: `#000000`,
+        color: `#8c8a5b`
+    },
+    inactiveBlock: {
+        // color: `#000000`
     }
 };
 
@@ -17,19 +21,10 @@ export default function Nav(props: PageProps) {
             <div className="flex flex-row gap-10 justify-center">
                 {pages.map((page, index) => (
                     <div
-                        className="font-bold py-2 px-4 rounded-lg"
+                        className="font-bold py-2 px-4 rounded-lg hover:bg-[#5c5a3d] hover:text-[#8c8a5b] text-black active:bg-[#2f2e22] focus:outline-none focus:ring"
                         key={`${index}`}
                         style={
-                            (styles.block,
-                            page === props.currentPage
-                                ? {
-                                      backgroundColor: `#000000`,
-                                      color: `#8c8a5b`
-                                  }
-                                : {
-                                      backgroundColor: `#8c8a5b`,
-                                      color: `#000000`
-                                  })
+                            page === props.currentPage ? styles.activeBlock : {}
                         }
                         onClick={() => {
                             props.setCurrentPage(page);
