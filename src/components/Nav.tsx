@@ -20,7 +20,7 @@ const styles: Styles = {
 };
 
 export default function Nav(props: PageProps): JSX.Element {
-    const pages: string[] = [`About`, `Projects`, `Random`, `Contact`];
+    const pages: string[] = [`About`, `Projects`, `Contact`];
 
     return (
         <div className="max-w-2xl mx-auto my-5 py-4 rounded-lg bg-[#8c8a5b]">
