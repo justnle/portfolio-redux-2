@@ -1,9 +1,10 @@
 import cookie from 'react-cookies';
 import React, { useEffect } from 'react';
 import './App.css';
-import { Info, Nav, Projects } from './components';
+import { Contact, Info, Nav, Projects } from './components';
 interface Pages {
     About: JSX.Element;
+    Contact: JSX.Element;
     Projects: JSX.Element;
     // Random: React.Component;
     // Contact: React.Component;
@@ -14,6 +15,7 @@ function App(): JSX.Element {
 
     const pages: Pages = {
         About: <Info />,
+        Contact: <Contact />,
         Projects: <Projects />
     };
 
@@ -26,8 +28,8 @@ function App(): JSX.Element {
     }, []);
 
     return (
-        <div className="App">
-            <header>
+        <div className="App mx-5">
+            <header className="mt-5">
                 <h1 className="text-7xl font-extrabold">Justin Le</h1>
             </header>
             <Nav
