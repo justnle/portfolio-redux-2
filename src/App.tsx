@@ -1,18 +1,42 @@
-import React from 'react';
+import cookie from 'react-cookies';
+import React, { useEffect } from 'react';
 import './App.css';
-import { Nav, Projects } from './components';
+import { Info, Nav, Projects } from './components';
+interface Pages {
+    About: JSX.Element;
+    Projects: JSX.Element;
+    // Random: React.Component;
+    // Contact: React.Component;
+}
 
-function App() {
+function App(): JSX.Element {
     const [currentPage, setCurrentPage] = React.useState('About');
 
-    const pages = {};
+    const pages: Pages = {
+        About: <Info />,
+        Projects: <Projects />
+    };
+
+    const initialPage = cookie.load(currentPage);
+
+    useEffect(() => {
+        if (initialPage) {
+            setCurrentPage(initialPage);
+        }
+    }, []);
 
     return (
         <div className="App">
             <header>
                 <h1 className="text-7xl font-extrabold">Justin Le</h1>
             </header>
-            <Nav currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            <Nav
+                currentPage={initialPage ? initialPage : currentPage}
+                setCurrentPage={setCurrentPage}
+            />
+            {initialPage
+                ? pages[initialPage as keyof Pages]
+                : pages[currentPage as keyof Pages]}
         </div>
     );
 }
