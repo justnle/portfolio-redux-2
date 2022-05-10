@@ -28,7 +28,6 @@ export default function Nav(props: PageProps) {
                         }
                         onClick={() => {
                             props.setCurrentPage(page);
-                            console.log(page);
                         }}
                     >
                         {page}
