@@ -1,20 +1,26 @@
-type PageProps = {
+import cookie from 'react-cookies';
+
+interface PageProps {
     currentPage: string;
     setCurrentPage: (page: string) => void;
-};
+}
 
-const styles = {
+interface Styles {
+    activeBlock: {
+        backgroundColor: string;
+        color: string;
+    };
+}
+
+const styles: Styles = {
     activeBlock: {
         backgroundColor: `#000000`,
         color: `#8c8a5b`
-    },
-    inactiveBlock: {
-        // color: `#000000`
     }
 };
 
-export default function Nav(props: PageProps) {
-    const pages = [`About`, `Tech`, `Projects`, `Random`, `Contact`];
+export default function Nav(props: PageProps): JSX.Element {
+    const pages: string[] = [`About`, `Projects`, `Random`, `Contact`];
 
     return (
         <div className="max-w-2xl mx-auto my-5 py-4 rounded-lg bg-[#8c8a5b]">
@@ -27,6 +33,7 @@ export default function Nav(props: PageProps) {
                             page === props.currentPage ? styles.activeBlock : {}
                         }
                         onClick={() => {
+                            cookie.save(`currentPage`, page);
                             props.setCurrentPage(page);
                         }}
                     >
