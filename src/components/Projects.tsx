@@ -49,7 +49,7 @@ export default function Projects() {
             {projects.map((project, index) => (
                 <div className="my-2 rounded-lg bg-[#ecebe2]">
                     <div className="py-8">
-                        <h2 className="font-bold text-l">
+                        <h3 className="font-bold text-l">
                             <a
                                 href={project.url}
                                 target="_blank"
@@ -57,14 +57,16 @@ export default function Projects() {
                             >
                                 {project.name}
                             </a>
-                        </h2>
+                        </h3>
                         <p>{project.desc}</p>
                         <div className="flex gap-3 justify-center">
                             {project.tech.map((tech, index) => (
-                                <div>{tech}</div>
+                                <div className="bg-[#9f9d75] text-white px-3 py-1 my-3 rounded-full font-bold text-xs">
+                                    {tech}
+                                </div>
                             ))}
                         </div>
-                        <button className="rounded-full bg-black text-white font-bold px-3 py-1 mt-2">
+                        <button className="rounded-lg bg-black text-white font-bold px-7 py-2">
                             {project.repo}
                         </button>
                     </div>
