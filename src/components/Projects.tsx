@@ -10,7 +10,7 @@ export default function Projects() {
                 `Zustand`,
                 `Tailwind CSS`
             ],
-            link: `link to the project`,
+            url: `link to the project`,
             repo: `repo`,
             img: `screenshot of the project`
         },
@@ -24,7 +24,7 @@ export default function Projects() {
                 `Zustand`,
                 `Tailwind CSS`
             ],
-            link: `link to the project`,
+            url: `link to the project`,
             repo: `repo`,
             img: `screenshot of the project`
         },
@@ -38,7 +38,7 @@ export default function Projects() {
                 `Zustand`,
                 `Tailwind CSS`
             ],
-            link: `link to the project`,
+            url: `link to the project`,
             repo: `repo`,
             img: `screenshot of the project`
         }
@@ -49,7 +49,15 @@ export default function Projects() {
             {projects.map((project, index) => (
                 <div className="my-2 rounded-lg bg-[#ecebe2]">
                     <div className="py-8">
-                        <h2 className="font-bold text-l">{project.name}</h2>
+                        <h2 className="font-bold text-l">
+                            <a
+                                href={project.url}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                {project.name}
+                            </a>
+                        </h2>
                         <p>{project.desc}</p>
                         <div className="flex gap-3 justify-center">
                             {project.tech.map((tech, index) => (
