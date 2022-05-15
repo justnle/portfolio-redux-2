@@ -116,7 +116,7 @@ export default function Projects() {
                             <p className="text-xs">{project.date}</p>
                         </h3>
                         <p className="px-4 text-sm">{project.desc}</p>
-                        <div className="flex gap-3 justify-center">
+                        <div className="flex flex-wrap gap-x-2 justify-center">
                             {project.tech.map((tech, index) => (
                                 <div
                                     className="bg-[#9f9d75] text-white px-3 py-1 my-3 rounded-full font-bold text-xs"
