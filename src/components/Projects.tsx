@@ -3,7 +3,7 @@ export default function Projects() {
         {
             name: `Twordle`,
             date: `2022`,
-            desc: `description of the project`,
+            desc: `Wordle game clone built with a custom word list. Test driven development with Vitest.`,
             tech: [
                 `TypeScript`,
                 `React.js`,
@@ -12,8 +12,8 @@ export default function Projects() {
                 `Vitest`,
                 `Zustand`
             ],
-            url: `link to the project`,
-            repo: `repo`,
+            url: `https://twordle-game.herokuapp.com/`,
+            repo: `https://github.com/twopcz/twordle`,
             img: `screenshot of the project`
         },
         {
@@ -79,6 +79,11 @@ export default function Projects() {
 
     return (
         <div className="flex flex-col gap-6 mt-5 max-w-2xl mx-auto">
+            <button className="rounded-lg bg-black text-white font-bold px-7 py-2">
+                <a href="" target="_blank" rel="noreferrer">
+                    GitHub
+                </a>
+            </button>
             {projects.map((project, index) => (
                 <div className="my-2 rounded-lg bg-[#ecebe2]">
                     <div className="py-8">
