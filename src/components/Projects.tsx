@@ -80,7 +80,11 @@ export default function Projects() {
     return (
         <div className="flex flex-col gap-6 mt-5 max-w-2xl mx-auto">
             <button className="rounded-lg bg-black text-white font-bold px-7 py-2">
-                <a href="" target="_blank" rel="noreferrer">
+                <a
+                    href="https://github.com/twopcz"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     GitHub
                 </a>
             </button>
