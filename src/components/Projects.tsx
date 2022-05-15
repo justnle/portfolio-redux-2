@@ -7,9 +7,10 @@ export default function Projects() {
             tech: [
                 `TypeScript`,
                 `React.js`,
+                `Tailwind`,
                 `Vite.js`,
-                `Zustand`,
-                `Tailwind CSS`
+                `Vitest`,
+                `Zustand`
             ],
             url: `link to the project`,
             repo: `repo`,
@@ -32,9 +33,9 @@ export default function Projects() {
                 `Axios`,
                 `Bootstrap`,
                 `Express.js`,
-                `React.js`,
                 `MongoDB`,
-                `Node.js`
+                `Node.js`,
+                `React.js`
             ],
             url: `https://order-up-jkrtr.herokuapp.com/`,
             repo: `https://github.com/twopcz/order-up`,
@@ -49,10 +50,10 @@ export default function Projects() {
                 `Bcrypt`,
                 `Chart.js`,
                 `Express.js`,
-                `React.js`,
-                `Sequelize`,
                 `MySQL`,
-                `Node.js`
+                `Node.js`,
+                `React.js`,
+                `Sequelize`
             ],
             url: `http://jlr-sneaker-crm.herokuapp.com/`,
             repo: `https://github.com/twopcz/jlr-sneaker-crm`,
@@ -65,10 +66,10 @@ export default function Projects() {
             tech: [
                 `Axios`,
                 `Express.js`,
-                `React.js`,
                 `MongoDB`,
                 `Mongoose`,
-                `Node.js`
+                `Node.js`,
+                `React.js`
             ],
             url: `https://jle-google-books.herokuapp.com/`,
             repo: `https://github.com/twopcz/Budget-Tracker`,
