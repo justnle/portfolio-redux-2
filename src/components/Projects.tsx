@@ -8,7 +8,7 @@ interface Project {
     img: string;
 }
 
-export default function Projects() {
+export default function Projects(): JSX.Element {
     const projects: Project[] = [
         {
             name: `Twordle`,
