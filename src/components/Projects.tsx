@@ -1,5 +1,15 @@
+interface Project {
+    name: string;
+    date: string;
+    desc: string;
+    tech: string[];
+    url: string;
+    repo: string;
+    img: string;
+}
+
 export default function Projects() {
-    const projects = [
+    const projects: Project[] = [
         {
             name: `Twordle`,
             date: `2022`,
