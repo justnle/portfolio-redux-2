@@ -99,7 +99,10 @@ export default function Projects() {
                 </a>
             </button>
             {projects.map((project, index) => (
-                <div className="my-2 rounded-lg bg-[#ecebe2]">
+                <div
+                    className="my-2 rounded-lg bg-[#ecebe2]"
+                    key={`${project}-container-${index}`}
+                >
                     <div className="py-8">
                         <h3 className="mb-2">
                             <a
@@ -115,7 +118,10 @@ export default function Projects() {
                         <p className="px-4 text-sm">{project.desc}</p>
                         <div className="flex gap-3 justify-center">
                             {project.tech.map((tech, index) => (
-                                <div className="bg-[#9f9d75] text-white px-3 py-1 my-3 rounded-full font-bold text-xs">
+                                <div
+                                    className="bg-[#9f9d75] text-white px-3 py-1 my-3 rounded-full font-bold text-xs"
+                                    key={`${tech}-container-${index}`}
+                                >
                                     {tech}
                                 </div>
                             ))}
