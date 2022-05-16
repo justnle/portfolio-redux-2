@@ -1,21 +1,19 @@
 import cookie from 'react-cookies';
 import React, { useEffect } from 'react';
 import './App.css';
-import { Contact, Info, Nav, Projects } from './components';
+import { About, Connect, Nav, Projects } from './components';
 interface Pages {
     About: JSX.Element;
-    Contact: JSX.Element;
+    Connect: JSX.Element;
     Projects: JSX.Element;
-    // Random: React.Component;
-    // Contact: React.Component;
 }
 
 function App(): JSX.Element {
     const [currentPage, setCurrentPage] = React.useState('About');
 
     const pages: Pages = {
-        About: <Info />,
-        Contact: <Contact />,
+        About: <About />,
+        Connect: <Connect />,
         Projects: <Projects />
     };
 
