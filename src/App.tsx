@@ -28,8 +28,8 @@ function App(): JSX.Element {
     }, []);
 
     return (
-        <div className="App mx-5">
-            <header className="mt-5">
+        <div className="App mx-5 my-5">
+            <header className="">
                 <h1 className="text-7xl font-extrabold">Justin Le</h1>
             </header>
             <Nav
