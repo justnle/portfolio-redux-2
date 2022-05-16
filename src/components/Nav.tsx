@@ -20,14 +20,14 @@ const styles: Styles = {
 };
 
 export default function Nav(props: PageProps): JSX.Element {
-    const pages: string[] = [`About`, `Projects`, `Contact`];
+    const pages: string[] = [`About`, `Projects`, `Connect`];
 
     return (
         <div className="max-w-2xl mx-auto my-5 py-4 rounded-lg bg-[#8c8a5b]">
             <div className="flex flex-row gap-10 justify-center">
                 {pages.map((page, index) => (
                     <div
-                        className="font-bold py-2 px-4 rounded-lg hover:bg-[#5c5a3d] hover:text-[#000000] text-black active:bg-[#2f2e22] duration-300 focus:outline-none focus:ring"
+                        className="font-bold py-2 px-4 rounded-lg hover:text-[#ffffff] text-black active:bg-[#2f2e22] duration-300 focus:outline-none focus:ring"
                         key={`${index}`}
                         style={
                             page === props.currentPage ? styles.activeBlock : {}
