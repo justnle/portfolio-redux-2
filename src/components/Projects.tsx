@@ -54,7 +54,7 @@ export default function Projects(): JSX.Element {
         {
             name: `Sneaker Store CRM`,
             date: `2020`,
-            desc: `A customer relationship management system for a sneaker store. This CRM presents visual data and has standard features like inventory/vendor management, user authentication, and report generation.`,
+            desc: `A customer relationship management system for a sneaker store. This CRM presents visual data with standard features like inventory/vendor management, user authentication, and report generation.`,
             tech: [
                 `Bootstrap`,
                 `Bcrypt`,
@@ -88,7 +88,7 @@ export default function Projects(): JSX.Element {
     ];
 
     return (
-        <div className="flex flex-col gap-6 mt-5 max-w-2xl mx-auto">
+        <div className="flex flex-col gap-4 mt-5 max-w-2xl mx-auto">
             <button className="rounded-lg bg-black text-white font-bold px-7 py-2">
                 <a
                     href="https://github.com/twopcz"
@@ -103,20 +103,20 @@ export default function Projects(): JSX.Element {
                     className="my-2 rounded-lg bg-[#ecebe2]"
                     key={`${project}-container-${index}`}
                 >
-                    <div className="py-8">
-                        <h3 className="mb-2">
+                    <div className="py-6">
+                        <h1 className="hover:text-[#727143]">
                             <a
                                 href={project.url}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="font-bold text-xl uppercase"
+                                className="font-bold text-2xl uppercase"
                             >
                                 {project.name}
                             </a>
-                            <p className="text-xs">{project.date}</p>
-                        </h3>
-                        <p className="px-4 text-sm">{project.desc}</p>
-                        <div className="flex flex-wrap gap-x-2 justify-center">
+                        </h1>
+                        <p className="text-xs">{project.date}</p>
+                        <div className="flex flex-wrap gap-x-1.5 my-2.5 py-2 justify-center">
+                            <p className="px-4 text-sm">{project.desc}</p>
                             {project.tech.map((tech, index) => (
                                 <div
                                     className="bg-[#9f9d75] text-white px-3 py-1 my-3 rounded-full font-bold text-xs"
@@ -126,24 +126,26 @@ export default function Projects(): JSX.Element {
                                 </div>
                             ))}
                         </div>
-                        <button
-                            type="button"
-                            className="text-white bg-black hover:bg-[#1b1b15] font-bold rounded-lg text-sm px-5 py-2 inline-flex"
-                        >
-                            repo
-                            <svg
-                                className="w-5 h-5 ml-2 -mr-1"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
+                        <a href={project.repo} target="_blank" rel="noreferrer">
+                            <button
+                                type="button"
+                                className="text-white bg-black hover:bg-[#727143] font-bold rounded-lg text-sm px-5 py-2 inline-flex"
                             >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                        </button>
+                                repo
+                                <svg
+                                    className="w-5 h-5 ml-2 -mr-1"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </a>
                     </div>
                 </div>
             ))}
