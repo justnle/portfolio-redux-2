@@ -89,27 +89,30 @@ export default function Projects(): JSX.Element {
 
     return (
         <div className="flex flex-col gap-4 mt-5 max-w-2xl mx-auto">
-            <button className="rounded-lg bg-black text-white font-bold px-7 py-2">
+            <p>
+                Check out more of my projects on my{` `}
                 <a
-                    href="https://github.com/twopcz"
+                    href="https://www.github.com/twopcz"
                     target="_blank"
                     rel="noreferrer"
+                    className="font-bold hover:text-[#727143]"
                 >
                     GitHub
                 </a>
-            </button>
+                .
+            </p>
             {projects.map((project, index) => (
                 <div
                     className="my-2 rounded-lg bg-[#ecebe2]"
                     key={`${project}-container-${index}`}
                 >
                     <div className="py-6">
-                        <h1 className="hover:text-[#727143]">
+                        <h1 className="hover:text-[#727143] duration-300">
                             <a
                                 href={project.url}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="font-bold text-2xl uppercase"
+                                className="font-extrabold text-2xl uppercase"
                             >
                                 {project.name}
                             </a>
@@ -129,7 +132,7 @@ export default function Projects(): JSX.Element {
                         <a href={project.repo} target="_blank" rel="noreferrer">
                             <button
                                 type="button"
-                                className="text-white bg-black hover:bg-[#727143] font-bold rounded-lg text-sm px-5 py-2 inline-flex"
+                                className="text-white bg-black hover:bg-[#727143] duration-300 font-bold rounded-lg text-sm px-5 py-2 inline-flex"
                             >
                                 repo
                                 <svg
