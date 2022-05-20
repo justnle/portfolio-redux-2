@@ -15,7 +15,7 @@ interface Styles {
 const styles: Styles = {
     activeBlock: {
         backgroundColor: `#000000`,
-        color: `#8c8a5b`
+        color: `#ffffff`
     }
 };
 
@@ -27,7 +27,7 @@ export default function Nav(props: PageProps): JSX.Element {
             <div className="flex flex-row gap-10 justify-center">
                 {pages.map((page, index) => (
                     <div
-                        className="font-bold py-2 px-4 rounded-lg hover:text-[#ffffff] text-black active:bg-[#2f2e22] duration-300 focus:outline-none focus:ring"
+                        className="font-bold py-2 px-4 rounded-lg hover:text-[#ffffff] text-black active:bg-[#2f2e22] duration-200 focus:outline-none focus:ring"
                         key={`${index}`}
                         style={
                             page === props.currentPage ? styles.activeBlock : {}
