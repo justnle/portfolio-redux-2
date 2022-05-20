@@ -1,7 +1,7 @@
 export default function About(): JSX.Element {
     return (
         <div className="max-w-2xl mx-auto my-10">
-            <h1>Hey, thanks for visiting.</h1>
+            <h1 className="text-xl">Hey, thanks for visiting!</h1>
             <br></br>
             <p>
                 I am a Full Stack Engineer based in <b>Seattle, WA</b>. I love
@@ -19,7 +19,7 @@ export default function About(): JSX.Element {
             <br></br>
             <button
                 type="button"
-                className="text-white bg-black rounded-lg py-3 px-5 hover:bg-[#8c8a5b] duration-300"
+                className="text-white bg-black rounded-lg py-3 px-5 hover:bg-[#8c8a5b] duration-200"
             >
                 <a
                     href="mailto:info@justinle.me"
