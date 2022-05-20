@@ -29,7 +29,7 @@ function App(): JSX.Element {
     return (
         <div className="App mx-5 my-5">
             <header className="">
-                <h1 className="text-7xl font-extrabold">Justin Le</h1>
+                <h1 className="text-7xl pt-3 font-extrabold">Justin Le</h1>
             </header>
             <Nav
                 currentPage={initialPage ? initialPage : currentPage}
