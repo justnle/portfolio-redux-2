@@ -17,12 +17,13 @@ function App(): JSX.Element {
         Projects: <Projects />
     };
 
-    const initialPage = cookie.load(currentPage);
+    const initialPage = cookie.load(`currentPage`);
 
     useEffect(() => {
         if (initialPage) {
             setCurrentPage(initialPage);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
