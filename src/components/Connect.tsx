@@ -21,6 +21,7 @@ export default function Connect(): JSX.Element {
 
     return (
         <div className="flex flex-col gap-4 mt-5 max-w-2xl mx-auto">
+            <h1 className="text-xl">Let's connect via</h1>
             {socials.map((social, index) => (
                 <div
                     className="my-2 py-5 rounded-lg bg-[#ecebe2]"
@@ -30,7 +31,7 @@ export default function Connect(): JSX.Element {
                         href={social.url}
                         target="_blank"
                         rel="noreferrer"
-                        className="font-extrabold text-2xl hover:text-[#727143] duration-300"
+                        className="font-extrabold text-2xl hover:text-[#727143] duration-200"
                     >
                         {social.name}
                     </a>
