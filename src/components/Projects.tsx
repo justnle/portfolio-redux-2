@@ -89,7 +89,7 @@ export default function Projects(): JSX.Element {
 
     return (
         <div className="flex flex-col gap-4 mt-5 max-w-2xl mx-auto">
-            <p>
+            <h1 className="text-xl">
                 Check out more of my projects on my{` `}
                 <a
                     href="https://www.github.com/twopcz"
@@ -100,14 +100,14 @@ export default function Projects(): JSX.Element {
                     GitHub
                 </a>
                 .
-            </p>
+            </h1>
             {projects.map((project, index) => (
                 <div
                     className="my-2 rounded-lg bg-[#ecebe2]"
                     key={`${project}-container-${index}`}
                 >
                     <div className="py-6">
-                        <h1 className="hover:text-[#727143] duration-300">
+                        <h1 className="hover:text-[#727143] duration-200">
                             <a
                                 href={project.url}
                                 target="_blank"
@@ -132,7 +132,7 @@ export default function Projects(): JSX.Element {
                         <a href={project.repo} target="_blank" rel="noreferrer">
                             <button
                                 type="button"
-                                className="text-white bg-black hover:bg-[#727143] duration-300 font-bold rounded-lg text-sm px-5 py-2 inline-flex"
+                                className="text-white bg-black hover:bg-[#727143] duration-200 font-bold rounded-lg text-sm px-5 py-2 inline-flex"
                             >
                                 repo
                                 <svg
@@ -142,9 +142,9 @@ export default function Projects(): JSX.Element {
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
                                     <path
-                                        fill-rule="evenodd"
+                                        fillRule="evenodd"
                                         d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"
+                                        clipRule="evenodd"
                                     ></path>
                                 </svg>
                             </button>
