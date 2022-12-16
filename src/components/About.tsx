@@ -6,12 +6,17 @@ export default function About(): JSX.Element {
             <p>
                 I am a Full Stack Engineer based in <b>Seattle, WA</b>. I love
                 to design and create applications that look as great as they are
-                user-friendly using React and TypeScript. I am currently working as the Lead Front-End Developer at <a href="https://www.samaritan.city/">Samaritan</a>, contributing to the product that helps those experiencing homelessness gain the social and financial support needed to find a stable home.
+                user-friendly using React and TypeScript. I am currently working
+                as the Lead Front-End Developer at{' '}
+                <a href="https://www.samaritan.city/">Samaritan</a>,
+                contributing to the product that helps those experiencing
+                homelessness gain the social and financial support needed to
+                find a stable home.
             </p>
             <br></br>
             <p>
                 Outside of the office, you can find me biking or working out at
-                the gym. 
+                the gym.
             </p>
             <br></br>
             <button
