@@ -11,13 +11,22 @@ interface Project {
 export default function Projects(): JSX.Element {
     const projects: Project[] = [
         {
+            name: `Pokedex`,
+            date: `2022`,
+            desc: `A Pokedex app that pages the pokeAPI to display Pokemon, view their stats, and captured locally.`,
+            tech: [`Axios`, `React.js`, `Tailwind`, `TypeScript`],
+            url: `https://justnle.github.io/pokedex/`,
+            repo: `https://github.com/justnle/pokedex`,
+            img: `screenshot of the project`
+        },
+        {
             name: `Twordle`,
             date: `2022`,
             desc: `Wordle game clone built with a custom word list. Test driven development with Vitest.`,
             tech: [
-                `TypeScript`,
                 `React.js`,
                 `Tailwind`,
+                `TypeScript`,
                 `Vite.js`,
                 `Vitest`,
                 `Zustand`
