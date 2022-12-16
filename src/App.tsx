@@ -1,10 +1,11 @@
 import cookie from 'react-cookies';
 import React, { useEffect } from 'react';
 import './App.css';
-import { About, Connect, Nav, Projects } from './components';
+import { About, Connect, Music, Nav, Projects } from './components';
 interface Pages {
     About: JSX.Element;
     Connect: JSX.Element;
+    // Music: JSX.Element;
     Projects: JSX.Element;
 }
 
@@ -14,6 +15,7 @@ function App(): JSX.Element {
     const pages: Pages = {
         About: <About />,
         Connect: <Connect />,
+        // Music: <Music />,
         Projects: <Projects />
     };
 
