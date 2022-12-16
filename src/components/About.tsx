@@ -2,23 +2,32 @@ export default function About(): JSX.Element {
     return (
         <div className="max-w-2xl mx-auto my-10">
             <h1 className="text-xl">Hey, thanks for visiting!</h1>
-            <br></br>
+            <br />
             <p>
                 I am a Full Stack Engineer based in <b>Seattle, WA</b>. I love
                 to design and create applications that look as great as they are
                 user-friendly using React and TypeScript. I am currently working
                 as the Lead Front-End Developer at{' '}
-                <a href="https://www.samaritan.city/">Samaritan</a>,
-                contributing to the product that helps those experiencing
+                <b>
+                    <a
+                        className="text-[#7378e8]"
+                        href="https://www.samaritan.city/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Samaritan
+                    </a>
+                </b>
+                , contributing to the product that helps those experiencing
                 homelessness gain the social and financial support needed to
                 find a stable home.
             </p>
-            <br></br>
+            <br />
             <p>
                 Outside of the office, you can find me biking or working out at
                 the gym.
             </p>
-            <br></br>
+            <br />
             <button
                 type="button"
                 className="text-white bg-black rounded-lg py-3 px-5 hover:bg-[#8c8a5b] duration-200"
