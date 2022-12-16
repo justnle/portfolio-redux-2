@@ -11,11 +11,11 @@ export default function Connect(): JSX.Element {
         },
         {
             name: `GitHub`,
-            url: `https://www.github.com/twopcz`
+            url: `https://github.com/justnle`
         },
         {
             name: `LinkedIn`,
-            url: `https://www.linkedin.com/in/itsjustinle`
+            url: `https://www.linkedin.com/in/itsjustinle/`
         }
     ];
 
