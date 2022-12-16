@@ -10,7 +10,7 @@ export default function About(): JSX.Element {
                 as the Lead Front-End Developer at{' '}
                 <b>
                     <a
-                        className="text-[#7378e8]"
+                        className="text-[#7378e8] hover:text-[#4e4f94] cursor-pointer"
                         href="https://www.samaritan.city/"
                         target="_blank"
                         rel="noreferrer"

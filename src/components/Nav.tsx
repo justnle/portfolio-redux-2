@@ -28,7 +28,7 @@ export default function Nav(props: PageProps): JSX.Element {
             <div className="flex flex-row justify-around">
                 {pages.map((page, index) => (
                     <div
-                        className="font-bold py-2 px-4 rounded-lg hover:text-[#ffffff] text-black active:bg-[#2f2e22] duration-200 focus:outline-none focus:ring"
+                        className="font-bold py-2 px-4 rounded-lg hover:text-[#ffffff] text-black active:bg-[#2f2e22] duration-200 focus:outline-none focus:ring hover:cursor-pointer"
                         key={`${index}`}
                         style={
                             page === props.currentPage ? styles.activeBlock : {}
