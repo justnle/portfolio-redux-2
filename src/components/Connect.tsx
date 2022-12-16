@@ -11,7 +11,7 @@ export default function Connect(): JSX.Element {
         },
         {
             name: `GitHub`,
-            url: `https://github.com/justnle`
+            url: `https://github.com/justinle`
         },
         {
             name: `LinkedIn`,
