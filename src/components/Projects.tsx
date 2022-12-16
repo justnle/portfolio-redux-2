@@ -127,16 +127,18 @@ export default function Projects(): JSX.Element {
                             </a>
                         </h1>
                         <p className="text-xs">{project.date}</p>
-                        <div className="flex flex-wrap gap-x-1.5 my-2.5 py-2 justify-center">
+                        <div className="my-2.5 py-2">
                             <p className="px-4 text-sm">{project.desc}</p>
-                            {project.tech.map((tech, index) => (
-                                <div
-                                    className="bg-[#9f9d75] text-white px-3 py-1 my-3 rounded-full font-bold text-xs"
-                                    key={`${tech}-container-${index}`}
-                                >
-                                    {tech}
-                                </div>
-                            ))}
+                            <div className="flex flex-wrap gap-x-1.5 my-2.5 py-2 mx-2 justify-center">
+                                {project.tech.map((tech, index) => (
+                                    <div
+                                        className="bg-[#9f9d75] text-white px-3 py-1 my-3 rounded-full font-bold text-xs"
+                                        key={`${tech}-container-${index}`}
+                                    >
+                                        {tech}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                         <a href={project.repo} target="_blank" rel="noreferrer">
                             <button
